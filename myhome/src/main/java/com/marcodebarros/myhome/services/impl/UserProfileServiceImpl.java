@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class UserProfileProfileServiceImpl implements UserProfileService {
+public class UserProfileServiceImpl implements UserProfileService {
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
     private final UserProfileRepository userProfileRepository;
 
-    public UserProfileProfileServiceImpl(UserProfileRepository userProfileRepository){
+    public UserProfileServiceImpl(UserProfileRepository userProfileRepository){
         this.userProfileRepository = userProfileRepository;
     }
 

@@ -1,0 +1,1 @@
+INSERT INTO USER_PROFILE(user_id, username) VALUES (1, 'TestUser')
