@@ -13,5 +13,5 @@ import lombok.Setter;
 public class RentalDocumentDto {
     private String rentalDocumentName;
     private String rentalDocumentDescription;
-    private Lob file;
+    private byte[] file;
 }

@@ -16,11 +16,12 @@ public class RentalDocument {
     private Long rentalDocumentId;
     private String rentalDocumentName;
     private String rentalDocumentDescription;
-    private Lob file;
+    @Lob
+    private byte[] document;
 
-    public RentalDocument(String rentalDocumentName, String rentalDocumentDescription, Lob file) {
+    public RentalDocument(String rentalDocumentName, String rentalDocumentDescription, byte[] document) {
         this.rentalDocumentName = rentalDocumentName;
         this.rentalDocumentDescription = rentalDocumentDescription;
-        this.file = file;
+        this.document = document;
     }
 }
